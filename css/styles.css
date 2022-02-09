@@ -1,0 +1,250 @@
+/* Стили для index.html */
+/* Основной цвет #212121 */
+/* Цвет Заголовка #212121 */
+/* Цвет абзацов(описаний) #757575 */
+/* Цвет активных ссылок #2196F3 */
+/* Цвет заливки секций  #2f303a */
+/* Цвет фона секции команда #F5F4FA */
+/* Цвет для кнопок при ховере #188CE8 */
+/* Верхняя линия border: #ECECEC */
+
+/* Описание Студия */
+
+:root {
+  --main-text-color: #212121;
+  --acent-color: #757575;
+  --primary-white-color: #ffffff;
+  --button-color: #2196f3;
+  --background-color: #2f303a;
+  --background-button: #f5f4fa;
+  --background: #188ce8;
+  --color-logo: #000000;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: 400;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-white-color);
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Logo */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--button-color);
+}
+
+.logo-studio {
+  color: var(--color-logo);
+}
+
+/* Header */
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--main-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--button-color);
+}
+
+.site-nav .link.current {
+  color: var(--button-color);
+}
+
+.adress-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.hero-button {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  background-color: var(--button-color);
+}
+.hero-button .hero-button:hover,
+.hero-button .hero-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--background);
+}
+
+/* Секции и абзацы*/
+.section-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Особенности */
+
+.futuries-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.futuries-title-p {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--acent-color);
+}
+
+/* Чем мы занимаемся*/
+
+/* Team section */
+.section-team {
+  background-color: var(--background-button);
+}
+.team-list {
+  text-align: center;
+  width: 270px;
+  height: 368px;
+  background-color: var(--primary-white-color);
+}
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-descrip {
+  font-size: 16px;
+  line-height: 1.14;
+  color: var(--acent-color);
+}
+
+/* Описание для Портфолио */
+
+/* Section project */
+
+.button {
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--background-button);
+}
+
+.project .button:active {
+  color: var(--primary-white-color);
+  background-color: var(--button-color);
+}
+
+.project .button:hover,
+.project .button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--button-color);
+}
+
+.section-project .link {
+  color: var(--main-text-color);
+}
+.project {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  width: 370px;
+  text-align: center;
+}
+
+.project-descrip {
+  font-size: 16px;
+  line-height: 1.87;
+  width: 370px;
+  text-align: center;
+  color: var(--acent-color);
+}
+
+/* Footer */
+
+.footer {
+  color: var(--primary-white-color);
+  background-color: var(--background-color);
+}
+
+.footer-adress .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-nav .link {
+  color: var(--acent-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--button-color);
+}
+
+.adress-nav .link.current {
+  color: var(--button-color);
+}
+
+.footer-adress {
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--primary-white-color);
+  background-color: var(--background-color);
+}
