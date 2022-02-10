@@ -167,6 +167,7 @@ body {
 .team {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .section-team {
   width: 1600px;
