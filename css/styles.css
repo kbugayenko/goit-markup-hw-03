@@ -1,13 +1,3 @@
-/* Стили для index.html */
-/* Основной цвет #212121 */
-/* Цвет Заголовка #212121 */
-/* Цвет абзацов(описаний) #757575 */
-/* Цвет активных ссылок #2196F3 */
-/* Цвет заливки секций  #2f303a */
-/* Цвет фона секции команда #F5F4FA */
-/* Цвет для кнопок при ховере #188CE8 */
-/* Верхняя линия border: #ECECEC */
-
 /* Описание Студия */
 
 :root {
@@ -31,12 +21,29 @@ body {
   color: var(--main-text-color);
 }
 .container {
-  max-width: 1600px;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
 }
 .list {
   list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
@@ -64,6 +71,7 @@ body {
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
+  display: flex;
 }
 
 .site-nav .link {
@@ -84,14 +92,13 @@ body {
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
+  display: flex;
 }
 
 /* Hero */
 
 .hero {
   background-color: var(--background-color);
-  width: 1600px;
-  height: 600px;
 }
 
 .hero-title {
@@ -118,8 +125,8 @@ body {
   background-color: var(--button-color);
   margin: 350px 700px 200px 700px;
 }
-.hero-button .hero-button:hover,
-.hero-button .hero-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   color: var(--primary-white-color);
   background-color: var(--background);
 }
@@ -170,8 +177,6 @@ body {
   justify-content: space-around;
 }
 .section-team {
-  width: 1600px;
-
   background-color: var(--background-button);
 }
 .team-list {
@@ -255,10 +260,6 @@ body {
 /* Footer */
 
 .footer {
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
   color: var(--primary-white-color);
   background-color: var(--background-color);
 }
