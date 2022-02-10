@@ -30,7 +30,9 @@ body {
   background-color: var(--primary-white-color);
   color: var(--main-text-color);
 }
-
+.container {
+  max-width: 1600px;
+}
 .list {
   list-style: none;
 }
@@ -88,6 +90,8 @@ body {
 
 .hero {
   background-color: var(--background-color);
+  width: 1600px;
+  height: 600px;
 }
 
 .hero-title {
@@ -98,6 +102,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin: 20px;
 }
 
 .hero-button {
@@ -111,6 +116,7 @@ body {
   border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--button-color);
+  margin: 350px 700px 200px 700px;
 }
 .hero-button .hero-button:hover,
 .hero-button .hero-button:focus {
@@ -128,7 +134,11 @@ body {
 }
 
 /* Особенности */
-
+.futuries {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .futuries-title {
   font-weight: 700;
   font-size: 14px;
@@ -143,9 +153,24 @@ body {
 }
 
 /* Чем мы занимаемся*/
-
+.section-study {
+  width: 1170px;
+}
+.study-item {
+}
+.study {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+}
 /* Team section */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
 .section-team {
+  width: 1600px;
+
   background-color: var(--background-button);
 }
 .team-list {
@@ -199,9 +224,16 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  margin-right: auto;
 }
-
+.section-project {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -222,6 +254,10 @@ body {
 /* Footer */
 
 .footer {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
   color: var(--primary-white-color);
   background-color: var(--background-color);
 }
