@@ -19,32 +19,33 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
   color: var(--main-text-color);
+  justify-content: center;
+}
+.container {
+  width: 1200px;
+  margin-left: 215px;
+  margin-right: 215px;
+  justify-content: center;
+  align-items: center;
 }
 
-img {
-  max-width: 100%;
-}
 h1,
 h2,
 h3,
 h4,
 p,
-ul,
-li {
+ul {
   margin: 0;
 }
-.container {
-  max-width: 1200px;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
+img {
+  display: block;
+  max-width: 100%;
 }
 .list {
   list-style: none;
+  padding: 0px;
 }
+
 .link {
   text-decoration: none;
 }
@@ -61,8 +62,6 @@ li {
   color: var(--button-color);
   display: flex;
   margin: 24px 94px 25px 215px;
-  width: 145px;
-  height: 31px;
 }
 
 .logo-studio {
@@ -72,13 +71,22 @@ li {
 /* Header */
 .nav {
   display: flex;
-  justify-content: flex-start;
 }
+/* .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+} */
+
 .site-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +110,10 @@ li {
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
+}
+.adress-nav-list {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -121,7 +132,7 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  margin: 20px;
+  padding: 200px 452px 15px;
 }
 
 .hero-button {
@@ -135,7 +146,12 @@ li {
   border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--button-color);
-  margin: 350px 700px 200px 700px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border: 0;
+  padding: 0;
+  margin: 15px 700px 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -150,13 +166,12 @@ li {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  width: auto;
 }
 
 /* Особенности */
 .futuries {
-  display: block;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex;
 }
 .futuries-title {
   font-weight: 700;
@@ -173,7 +188,6 @@ li {
 
 /* Чем мы занимаемся*/
 .section-study {
-  width: 1170px;
 }
 .study-item {
 }
@@ -248,11 +262,6 @@ li {
   width: 1230px;
 }
 .section-project {
-  width: calc((100%-60px) / 3);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: 30px;
 }
 .project-title {
   font-weight: 700;
@@ -276,10 +285,16 @@ li {
 .footer {
   color: var(--primary-white-color);
   background-color: var(--background-color);
+  width: 1600px;
+}
+.footer > .logo {
+  margin: 0px 1240px 0px 215px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .footer-content {
-  justify-content: flex-start;
   margin-left: 215px;
+  width: 231px;
 }
 .footer-adress .link {
   color: rgba(255, 255, 255, 0.6);
@@ -302,6 +317,9 @@ li {
   font-style: normal;
   color: var(--primary-white-color);
   background-color: var(--background-color);
-  justify-content: flex-start;
-  margin-top: 10px;
+  width: 231px;
+  padding-bottom: 51px;
+}
+.footer-adress-item {
+  padding-top: 9px;
 }
