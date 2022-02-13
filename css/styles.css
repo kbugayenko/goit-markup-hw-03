@@ -23,7 +23,7 @@ body {
 }
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 200px;
   padding: 0 15px;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 24px 93px 25px 215px;
+  margin: 24px 93px 25px 0;
+  padding: 0;
 }
 
 .logo-studio {
@@ -78,8 +79,12 @@ img {
 .adress-nav,
 .adress-nav-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav {
@@ -87,6 +92,8 @@ img {
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-nav .link {
@@ -110,10 +117,14 @@ img {
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.02em;
-  margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 .adress-nav-list {
   margin-right: 50px;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hero */
@@ -165,41 +176,60 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  width: auto;
 }
 
 /* Особенности */
 .futuries {
   display: flex;
+  flex-basis: calc(100% / 4 - 20px);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.futuries > .item {
+  margin: 94px 30px 0;
 }
 .futuries-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin: 94px 30px 10px;
 }
 
 .futuries-title-p {
   font-size: 14px;
   line-height: 1.71;
   color: var(--acent-color);
+  margin-bottom: 94px;
 }
 
 /* Чем мы занимаемся*/
-.section-study {
-}
-.study-item {
-}
+
 .study {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: auto;
+  flex-basis: calc(100% / 3 - 100px);
+  padding: 0;
+  margin-top: 50px;
+  margin-right: -30px;
 }
+
+.section-study {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.study-item {
+  margin-right: 30px;
+}
+
 /* Team section */
 .team {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  flex-basis: calc(100% / 4 - 90px);
 }
 .section-team {
   background-color: var(--background-button);
@@ -286,13 +316,11 @@ img {
   background-color: var(--background-color);
   width: 1600px;
 }
-.footer > .logo {
-  margin: 0px 1240px 0px 215px;
+.container > .logo {
   padding-top: 60px;
   padding-bottom: 20px;
 }
 .footer-content {
-  margin-left: 215px;
   width: 231px;
 }
 .footer-adress .link {
