@@ -63,8 +63,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 24px 93px 25px 0;
-  padding: 0;
+  margin: 24px 93px 20px 0;
+  padding-bottom: 5px;
 }
 
 .logo-studio {
@@ -119,10 +119,10 @@ img {
   letter-spacing: 0.02em;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
 }
 .adress-nav-list {
-  margin-right: 50px;
-  margin-left: auto;
+  margin-left: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -181,19 +181,19 @@ img {
 /* Особенности */
 .futuries {
   display: flex;
-  flex-basis: calc(100% / 4 - 20px);
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .futuries > .item {
-  margin: 94px 30px 0;
+  margin: 0;
+  padding: 0;
 }
+
 .futuries-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin: 94px 30px 10px;
+  margin-left: 30px;
+  margin-top: 94px;
 }
 
 .futuries-title-p {
@@ -201,6 +201,10 @@ img {
   line-height: 1.71;
   color: var(--acent-color);
   margin-bottom: 94px;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 4);
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 /* Чем мы занимаемся*/
@@ -214,14 +218,9 @@ img {
   margin-right: -30px;
 }
 
-.section-study {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
 .study-item {
   margin-right: 30px;
+  margin-bottom: 94px;
 }
 
 /* Team section */
@@ -234,24 +233,32 @@ img {
 .section-team {
   background-color: var(--background-button);
 }
+.section-team > .section-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 .team-list {
   text-align: center;
   width: 270px;
   height: 368px;
   background-color: var(--primary-white-color);
+  margin-bottom: 94px;
 }
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team-descrip {
   font-size: 16px;
   line-height: 1.14;
   color: var(--acent-color);
+  justify-content: center;
 }
-
 /* Описание для Портфолио */
 
 /* Section project */
@@ -318,7 +325,7 @@ img {
 }
 .container > .logo {
   padding-top: 60px;
-  padding-bottom: 20px;
+  margin-top: -25px;
 }
 .footer-content {
   width: 231px;
