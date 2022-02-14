@@ -63,8 +63,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 24px 93px 20px 0;
-  padding-bottom: 5px;
 }
 
 .logo-studio {
@@ -79,12 +77,12 @@ img {
 .adress-nav,
 .adress-nav-list {
   display: flex;
-  padding: 0;
 }
 
 .header {
-  padding: 0;
-  margin: 0;
+  margin-top: 25px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
 }
 
 .site-nav {
@@ -109,7 +107,7 @@ img {
   color: var(--button-color);
 }
 .nav-item {
-  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .adress-nav {
@@ -145,7 +143,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  padding: 200px 452px 15px;
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -155,16 +154,14 @@ img {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  border: 0;
   border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--button-color);
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  border: 0;
-  padding: 0;
-  margin: 15px 700px 200px;
+  padding: 10px 32px;
+  margin-bottom: 200px;
+  margin-left: 485px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -173,6 +170,11 @@ img {
 }
 
 /* Секции и абзацы*/
+.section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 .section-title {
   color: var(--main-text-color);
   font-weight: 700;
@@ -222,7 +224,6 @@ img {
 
 .study-item {
   margin-right: 30px;
-  margin-bottom: 94px;
 }
 
 /* Team section */
@@ -232,10 +233,16 @@ img {
   justify-content: space-around;
   flex-basis: calc(100% / 4 - 90px);
 }
-.section-team {
+.section.team {
   background-color: var(--background-button);
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-bottom: 94px;
+  margin-bottom: 0px;
 }
-.section-team > .section-title {
+.section-title {
   padding-top: 94px;
   padding-bottom: 50px;
 }
@@ -244,7 +251,6 @@ img {
   width: 270px;
   height: 368px;
   background-color: var(--primary-white-color);
-  margin-bottom: 94px;
 }
 .team-title {
   font-weight: 500;
@@ -260,6 +266,7 @@ img {
   line-height: 1.14;
   color: var(--acent-color);
   justify-content: center;
+  padding-bottom: 94px;
 }
 /* Описание для Портфолио */
 
@@ -318,6 +325,9 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
+.card-info {
+  border: 1px solid #eeeeee;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -336,10 +346,7 @@ img {
   color: var(--acent-color);
   padding-bottom: 20px;
 }
-.section {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
+
 /* Footer */
 
 .footer {
@@ -349,9 +356,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.footer-content {
+  margin-top: 20px;
+}
+
 .container > .logo {
   padding-top: 60px;
-  margin-top: -25px;
 }
 .logo-studio.footer {
   margin-left: 0;
