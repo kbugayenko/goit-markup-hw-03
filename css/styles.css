@@ -109,7 +109,9 @@ img {
 .nav-item {
   margin-left: 50px;
 }
-
+.nav-item:first-child {
+  margin-left: 93px;
+}
 .adress-nav {
   font-weight: 500;
   font-size: 14px;
@@ -327,11 +329,10 @@ img {
 .section-project {
   display: flex;
   flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-right: calc(-1 * 30px);
 }
 .card {
-  flex-basis: calc(100% / 3 - 60px);
-}
-.card-info {
 }
 
 .project-title {
@@ -340,7 +341,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   width: 370px;
-  padding: 20px 0px 4px 24px;
+  padding: 20px 24px 4px;
 }
 
 .project-descrip {
@@ -348,8 +349,7 @@ img {
   line-height: 1.87;
   width: 370px;
   color: var(--acent-color);
-  padding-left: 24px;
-  padding-bottom: 20px;
+  padding: 0 24px 20px;
 }
 .project-tehno,
 .project-poster,
@@ -360,6 +360,9 @@ img {
 .project-limit,
 .project-lab,
 .project-business {
+  flex-basis: calc(100% / 3 - 60px);
+  margin-left: 30px;
+  margin-top: 30px;
   border: 1px solid #eeeeee;
 }
 /* Footer */
