@@ -9,6 +9,9 @@
   --background-button: #f5f4fa;
   --background: #188ce8;
   --color-logo: #000000;
+
+  --padding-section: 94px;
+  --basic-margin: 30px;
 }
 
 body {
@@ -106,6 +109,7 @@ img {
 .site-nav .link.current {
   color: var(--button-color);
 }
+
 .nav-item {
   margin-left: 50px;
 }
@@ -131,12 +135,14 @@ img {
 }
 
 /* Hero */
+
 .main {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
 }
+
 .hero {
   background-color: var(--background-color);
 }
@@ -150,7 +156,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
   padding-top: 200px;
-  margin-bottom: 30px;
+  margin-bottom: var(--basic-margin);
 }
 
 .hero-button {
@@ -177,8 +183,7 @@ img {
 
 /* Секции и абзацы*/
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: var(--padding-section) 0;
 }
 
 .section-title {
@@ -198,8 +203,8 @@ img {
   padding-bottom: 0;
 }
 .futuries > .item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  flex-basis: calc(100% / 4 - var(--basic-margin));
+  margin-left: var(--basic-margin);
 }
 .item:first-child {
   margin-left: 0;
@@ -223,11 +228,10 @@ img {
 .study {
   display: flex;
   flex-wrap: wrap;
-  /* flex-basis: calc(100% / 3 - 60px); */
 }
 
 .study-item {
-  margin-right: 30px;
+  margin-right: var(--basic-margin);
 }
 .study-item:last-child {
   margin-right: 0;
@@ -259,14 +263,14 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+  padding-bottom: var(--basic-margin);
 }
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: var(--basic-margin);
   padding-bottom: 10px;
 }
 
@@ -329,10 +333,8 @@ img {
 .section-project {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * 30px);
-  margin-right: calc(-1 * 30px);
-}
-.card {
+  margin-left: calc(-1 * var(--basic-margin));
+  margin-right: calc(-1 * var(--basic-margin));
 }
 
 .project-title {
@@ -361,8 +363,8 @@ img {
 .project-lab,
 .project-business {
   flex-basis: calc(100% / 3 - 60px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: var(--basic-margin);
+  margin-top: var(--basic-margin);
   border: 1px solid #eeeeee;
 }
 /* Footer */
