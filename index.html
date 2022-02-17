@@ -17,38 +17,32 @@
   </head>
   <body>
     <!--Верхняя линия-->
-    <header class="main">
+    <header class="header">
       <div class="container">
-        <div class="header">
-          <nav>
-            <div class="nav">
-              <a href="./index.html" class="logo"
-                >Web<span class="logo-studio">Studio</span></a
-              >
-              <ul class="site-nav list">
-                <li class="nav-item">
-                  <a href="./index.html" class="link current">Студия</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./portfolio.html" class="link">Портфолио</a>
-                </li>
-                <li class="nav-item"><a href="" class="link">Контакты</a></li>
-              </ul>
-            </div>
-          </nav>
-          <div class="adress-nav">
-            <ul class="adress-nav list">
-              <li class="adress-nav-list">
-                <a href="mailto:info@devstudio.com" class="link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="adress-nav-list">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <nav class="nav">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-studio">Studio</span></a
+          >
+          <ul class="site-nav list">
+            <li class="nav-item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="adress-nav list">
+          <li class="adress-nav-list">
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="adress-nav-list">
+            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <!--Hero-->
@@ -65,7 +59,7 @@
       <!--Особенности-->
       <section class="section">
         <div class="container">
-          <h2 hidden>Особенности</h2>
+          <h2 class="visually-hidden">Особенности</h2>
           <ul class="futuries list">
             <li class="item">
               <h3 class="futuries-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -142,10 +136,8 @@
                 width="270"
                 alt="teamcard1"
               />
-              <div class="team-info">
-                <h3 class="team-title">Игорь Демьяненко</h3>
-                <p lang="en" class="team-descrip">Product Designer</p>
-              </div>
+              <h3 class="team-title">Игорь Демьяненко</h3>
+              <p lang="en" class="team-descrip">Product Designer</p>
             </li>
             <li class="team-list">
               <img
@@ -154,10 +146,8 @@
                 width="270"
                 alt="teamcard2"
               />
-              <div class="team-info">
-                <h3 class="team-title">Ольга Репина</h3>
-                <p lang="en" class="team-descrip">Frontend Developer</p>
-              </div>
+              <h3 class="team-title">Ольга Репина</h3>
+              <p lang="en" class="team-descrip">Frontend Developer</p>
             </li>
             <li class="team-list">
               <img
@@ -166,10 +156,8 @@
                 width="270"
                 alt="teamcard3"
               />
-              <div class="team-info">
-                <h3 class="team-title">Николай Тарасов</h3>
-                <p lang="en" class="team-descrip">Marketing</p>
-              </div>
+              <h3 class="team-title">Николай Тарасов</h3>
+              <p lang="en" class="team-descrip">Marketing</p>
             </li>
             <li class="team-list">
               <img
@@ -178,10 +166,8 @@
                 width="270"
                 alt="teamcard4"
               />
-              <div class="team-info">
-                <h3 class="team-title">Михаил Ермаков</h3>
-                <p lang="en" class="team-descrip">UI Designer</p>
-              </div>
+              <h3 class="team-title">Михаил Ермаков</h3>
+              <p lang="en" class="team-descrip">UI Designer</p>
             </li>
           </ul>
         </div>
@@ -191,12 +177,12 @@
     <footer class="footer">
       <div class="container">
         <a href="./index.html" class="logo"
-          >Web<span class="logo-studio footer">Studio</span></a
+          >Web<span class="logo-studio">Studio</span></a
         >
         <address class="footer-adress">
           <div class="footer-content">
             г. Киев, пр-т Леси Украинки, 26
-            <ul class="list">
+            <ul class="footer-adress list">
               <li class="footer-adress-item">
                 <a href="mailto:info@example.com" class="link"
                   >info@example.com</a
