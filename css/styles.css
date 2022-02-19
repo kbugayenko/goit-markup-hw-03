@@ -110,9 +110,12 @@ img {
 }
 
 .nav-item {
+  margin-right: 50px;
+}
+
+.nav-item > .link {
   display: block;
   padding: 32px 0;
-  margin-right: 50px;
 }
 
 .nav-item:last-child {
@@ -136,13 +139,6 @@ img {
 }
 
 /* Hero */
-
-.main {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
 
 .hero {
   background-color: var(--background-color);
@@ -273,7 +269,7 @@ img {
 
 .section.team {
   background-color: var(--background-button);
-  width: 1600px;
+
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -315,7 +311,6 @@ img {
 .footer {
   color: var(--primary-white-color);
   background-color: var(--background-color);
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 0;
